@@ -20,6 +20,14 @@ class Rental {
         return _movie.getPriceCode();
     }
 
+    public Movie getMovie(){
+        return _movie;
+    }
+
+    public void setMovie(Movie arg){
+        _movie = arg;
+    }
+
     double getCharge() {
         return _movie.getCharge(_daysRented);
     }

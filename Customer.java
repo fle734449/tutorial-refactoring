@@ -58,7 +58,7 @@ class Customer {
         result.append("</EM></H1><P>\n");
         for (Rental each : _rentals) {
             //show figures for each rental
-            result.append(each.getTitle()).append(": ");
+            result.append(each.getMovie().getTitle()).append(": ");
             result.append(String.valueOf(each.getCharge())).append("<BR>\n");
         }
         //add footer lines
